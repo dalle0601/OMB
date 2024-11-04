@@ -1,0 +1,66 @@
+# Java files
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.log
+
+# IDE files
+/.idea/
+/*.iml
+/.vscode/
+/*.classpath
+/.project
+/.settings/
+
+# Gradle files
+.gradle/
+/build/
+/out/
+
+# Maven files
+/target/
+
+# H2 database
+*.mv.db
+*.trace.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables and configuration files
+.env
+*.env
+*.properties
+*.yml
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+target/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+logs/
+*.log
