@@ -9,14 +9,19 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @Builder
-@Table(name = "omb_user")
+@Table(name = "OMB_USER")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID", updatable = false)
     private Long id;
+    @Column(name = "USER_NAME")
     private String userName;
+    @Column(name = "PASSWORD")
     private String password;
+    @Column(name = "EMAIL")
     private String email;
+    @Column(name = "GENDER")
     private String gender;
 
     public User(Long id, String userName, String password, String email, String gender) {
