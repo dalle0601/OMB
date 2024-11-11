@@ -1,5 +1,6 @@
 package com.project.omb.controller;
 
+import com.project.omb.dto.LoginReqDTO;
 import com.project.omb.facade.UserFacade;
 import com.project.omb.dto.UserReqDTO;
 import com.project.omb.dto.UserResDTO;
@@ -21,6 +22,12 @@ public class UserController {
     @PostMapping("/user/register")
     public ResponseEntity<UserResDTO> joinUser(@RequestBody UserReqDTO userReqDTO) {
         UserResDTO userResDTO = userFacade.registerUser(userReqDTO);
+        return ResponseEntity.ok(userResDTO);
+    }
+
+    @PostMapping("/user/login")
+    public ResponseEntity<UserResDTO> loginUser(@RequestBody LoginReqDTO loginReqDTO) {
+        UserResDTO userResDTO = userFacade.loginUser(loginReqDTO);
         return ResponseEntity.ok(userResDTO);
     }
 }
